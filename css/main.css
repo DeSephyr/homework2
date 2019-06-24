@@ -4,6 +4,15 @@ body {
     letter-spacing: 0.05em
 }
 
+button {
+    background: transparent;
+    border: none;
+}
+
+button:active, button:focus {
+    outline: none;
+  }
+
 
 .container {
     width: 940px;
@@ -12,7 +21,6 @@ body {
 
 .header {
     background: #4e8598;
-    height: 100vh;
     color: #fff;
 }
 
@@ -34,7 +42,36 @@ body {
 }
 
 .button {
+    display: block;
     margin: 0 auto;
     width: 23%;
-    
+    border: 1px solid #fff;
+    border-radius: 27.5px;
+    font-size: 0.813rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1.125rem 1.525rem;  
+}
+
+.offer__button {
+    margin-top: 1.688em;
+    color: #fff;
+    transition: 0.3s ease all;
+}   
+
+.offer__button:hover {
+    background: #fff;
+    color: #2f383b;
+}
+
+.offer__button:active {
+    outline: none;
+    background: #cdd3dc;
+}
+
+.arrow-down {
+    width: 2.6%;
+    margin: 0 auto;
+    padding-top: 11.125em;
+    padding-bottom: 3.625em;
 }
