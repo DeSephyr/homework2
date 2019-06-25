@@ -1,12 +1,19 @@
+html {
+    font-size: 100%;
+}
 body {
     font-family: Tahoma, Arial, sans-serif;
     color: #2f383b;
-    letter-spacing: 0.05em
+    letter-spacing: 0.02em
 }
 
 button {
     background: transparent;
     border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
 button:active, button:focus {
@@ -51,12 +58,14 @@ button:active, button:focus {
     text-transform: uppercase;
     font-weight: bold;
     padding: 1.125rem 1.525rem;  
+    
 }
 
 .offer__button {
     margin-top: 1.688em;
     color: #fff;
     transition: 0.3s ease all;
+    cursor: pointer;
 }   
 
 .offer__button:hover {
@@ -74,4 +83,68 @@ button:active, button:focus {
     margin: 0 auto;
     padding-top: 11.125em;
     padding-bottom: 3.625em;
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+
+.arrow-down:hover {
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.section-title {
+    display: block;
+    width: 13.9%;
+    padding: 5.000rem 0 5.500rem 0;
+    font-size: 1.625em;
+    text-transform: uppercase;
+    margin: 0 auto;
+
+}
+
+.info-wrapper {
+    display: flex;
+
+}
+
+.mission {
+    width: 41.7%;
+    margin-right: 9.7%;
+}
+
+.block-title {
+    font-size: 1.375em;
+    text-transform: uppercase;
+}
+
+.block-title:after {
+    content: '';
+    display: block;
+    width: 18.36%;
+    height: 0.188rem;
+    background: #4e8598;
+    margin: 0.813rem 0 1.875rem 0.002%;
+}
+
+.mission__paragraph {
+    font-size: 0.938em;
+    line-height: 1.500em;
+}
+
+.merits {
+    width: 46.3%;
+}
+
+.merits__merit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.merits__merit img {
+    display: block;
+}
+
+.merits__name {
+    padding-left: 5%;
+    padding-right: 6.4%;
 }
