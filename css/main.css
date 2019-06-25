@@ -80,6 +80,7 @@ button:focus {
     text-transform: uppercase;
     font-weight: bold;
     padding: 1.125rem 1.525rem;
+    text-align: center;
 
 }
 
