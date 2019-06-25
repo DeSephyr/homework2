@@ -1,13 +1,24 @@
 html {
     font-size: 100%;
 }
+
 body {
     font-family: Tahoma, Arial, sans-serif;
     color: #2f383b;
     letter-spacing: 0.02em
 }
-div, p, input, button, form, a {
-	box-sizing: border-box;
+
+div,
+p,
+input,
+button,
+form,
+a {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 button {
@@ -15,11 +26,19 @@ button {
     border: none;
 }
 
-h1, h2, h3, h4, h5, h6, p, div {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
     margin: 0;
 }
 
-button:active, button:focus {
+button:active,
+button:focus {
     outline: none;
 }
 
@@ -60,8 +79,8 @@ button:active, button:focus {
     font-size: 0.813rem;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 1.125rem 1.525rem;  
-    
+    padding: 1.125rem 1.525rem;
+
 }
 
 .offer__button {
@@ -69,7 +88,7 @@ button:active, button:focus {
     color: #fff;
     transition: 0.3s ease all;
     cursor: pointer;
-}   
+}
 
 .offer__button:hover {
     background: #fff;
@@ -107,7 +126,7 @@ button:active, button:focus {
 
 .info-wrapper {
     display: flex;
-   
+
 }
 
 .mission {
@@ -136,33 +155,36 @@ button:active, button:focus {
     padding-bottom: 1.7rem;
 }
 
+.mission__paragraph:last-child {
+    padding-bottom: 0;
+}
+
 .merits {
-    width: 46.3%;
+    width: 50.3%;
 }
 
 .merits__merit {
     display: flex;
-    margin-bottom: 1rem;
-    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+    justify-content: stretch;
     align-items: center;
 }
 
-.merits__merit:nth-child(4)
-{
-   margin-left: 2%;
+.merits__merit:nth-child(4) {
+    margin-left: 2%;
 }
 
 .merits__merit img {
-    align-self: center; 
+    align-self: center;
 }
 
 .merits__name {
-    padding-left: 5%;
-    padding-right: 6.4%;
-    /* flex-grow: 1; */
+    margin-left: 5%;
+    margin-right: 6.4%;
     color: #4e8598;
     font-weight: bold;
-    
+    max-width: 70%;
+    min-width: 30%;
 }
 
 .merits__merit:nth-child(4) img {
@@ -170,8 +192,132 @@ button:active, button:focus {
 }
 
 .merits__description {
+    display: inline-block;
     text-align: left;
     color: #2f383b;
     opacity: 0.48;
     font-size: 0.938em;
+    margin-right: auto;
 }
+
+.advantages__title {
+    width: 47.2%;
+    padding: 8rem 0 4rem 0;
+}
+
+.advantages__items-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 4%;
+}
+
+.advantages__item {
+    text-align: center;
+}
+
+.advantages__item-number {
+    font-size: 1.875em;
+    width: 4.688rem;
+    height: 4.688rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    border: 1px solid #2f383b;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    transition: 0.3s ease all;
+}
+
+.advantages__item-number:hover {
+    background: #2f383b;
+    color: #fff;
+}
+
+.advantages__item-text {
+    font-weight: bold;
+    padding-bottom: 3.750em;
+}
+
+.recall__title {
+    display: block;
+    width: 19%;
+    margin: 0 auto;
+    font-size: 1.375em;
+    text-transform: uppercase;
+    padding-bottom: 1.625rem;
+}
+
+.recall__text {
+    display: block;
+    width: 44%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.875em;
+    line-height: 1.438rem;
+    padding-bottom: 1.500rem;
+
+}
+
+.recall__button {
+    border: 1px solid #2f383b;
+    background: #fff;
+    color: #2f383b;
+    transition: 0.3s ease all;
+    cursor: pointer;
+    margin-bottom: 4.688rem;
+}
+
+.recall__button:hover {
+    background: #2f383b;
+    color: #fff;
+}
+
+.recall__button:active {
+    background: #1a1e20;
+}
+
+.footer {
+    background: #2f383b;
+    color: #fff;
+    padding: 3.063em 0;
+    font-size: 0.813em;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__rights {
+    opacity: 0.55;
+}
+
+.footer__name {
+    opacity: 0.55;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    color: #fff;
+}
+
+.footer__name:hover {
+    opacity: 1;
+    border-bottom: 1px solid #fff;
+}
+
+.footer__policy {
+    opacity: 0.9;
+    border-bottom: 1px dotted #fff;
+    transition: 0.3s ease all;
+    cursor: pointer;
+}
+
+.footer__policy:hover {
+    opacity: 1;
+    border-bottom: 1px solid #fff;
+}
+
+
+
+
+
+
