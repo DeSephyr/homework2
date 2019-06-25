@@ -6,19 +6,22 @@ body {
     color: #2f383b;
     letter-spacing: 0.02em
 }
+div, p, input, button, form, a {
+	box-sizing: border-box;
+}
 
 button {
     background: transparent;
     border: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, div {
     margin: 0;
 }
 
 button:active, button:focus {
     outline: none;
-  }
+}
 
 
 .container {
@@ -104,7 +107,7 @@ button:active, button:focus {
 
 .info-wrapper {
     display: flex;
-
+   
 }
 
 .mission {
@@ -115,6 +118,7 @@ button:active, button:focus {
 .block-title {
     font-size: 1.375em;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .block-title:after {
@@ -129,6 +133,7 @@ button:active, button:focus {
 .mission__paragraph {
     font-size: 0.938em;
     line-height: 1.500em;
+    padding-bottom: 1.7rem;
 }
 
 .merits {
@@ -137,14 +142,36 @@ button:active, button:focus {
 
 .merits__merit {
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.merits__merit:nth-child(4)
+{
+   margin-left: 2%;
 }
 
 .merits__merit img {
-    display: block;
+    align-self: center; 
 }
 
 .merits__name {
     padding-left: 5%;
     padding-right: 6.4%;
+    /* flex-grow: 1; */
+    color: #4e8598;
+    font-weight: bold;
+    
+}
+
+.merits__merit:nth-child(4) img {
+    margin-right: 2%;
+}
+
+.merits__description {
+    text-align: left;
+    color: #2f383b;
+    opacity: 0.48;
+    font-size: 0.938em;
 }
