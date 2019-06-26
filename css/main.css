@@ -105,7 +105,7 @@ button:focus {
     width: 2.6%;
     margin: 0 auto;
     margin-top: 11.125em;
-    margin-bottom: 3.625em;
+    padding-bottom: 3.625em;
     transition: 0.3s ease all;
     cursor: pointer;
 }
